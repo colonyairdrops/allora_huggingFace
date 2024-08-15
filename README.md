@@ -58,7 +58,18 @@ cd allora-chain && make all
 
 allorad version
 ```
-# how-to-run-worker-allora-hugging-face-worker
+### Start Hugging Face Worker
+
+# Optional: Only if you ran basic coin prediction node before
+ِDelete old files
+```sh
+cd $HOME && cd basic-coin-prediction-node
+docker compose down -v
+docker container prune
+
+cd $HOME && rm -rf basic-coin-prediction-node
+```
+
 1. **clone repo**
 
 ```sh
