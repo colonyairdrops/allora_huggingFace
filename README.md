@@ -198,6 +198,12 @@ allorad keys list
 RPC: https://allora-rpc.testnet-1.testnet.allora.network/
 
 5. **edit APP.PY**
+```sh
+nano app.py 
+```
+
+*Edit your api_key from Coingecko
+*LINK API: https://www.coingecko.com/en/developers/dashboard
 
 ```sh
 from flask import Flask, Response
@@ -283,9 +289,6 @@ def get_inference(token):
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8000, debug=True)
 ```
-
-*Edit your api_key from Coingecko
-*LINK API: https://www.coingecko.com/en/developers/dashboard
 
 6. Initialize Worker
 ```sh
